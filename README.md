@@ -2,6 +2,11 @@
 
 RECIPES OF KICHEN
 
+Technologies:
+database MySQL
+language : Html, Css, Js
+Framework: Django, bootstrap
+
 Installation:
 
 1)Open this project into your pyCharm 
