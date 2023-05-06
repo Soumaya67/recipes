@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block content %}
+
+<script>
+body{
+	background-color:#232a36;
+}
+
+.header{
+	position:absolute;
+	top:0;
+	background-color:#232a36;
+	color:white;
+	border-bottom:2px solid white;
+	width: 100%
+}
+
+#square{	
+	position:absolute;
+	top:10%;
+	left:25%;
+	right:25%;
+	height:85%;
+	width:50%;
+	background-color:#232a36;
+	border:5px solid black;
+}
+
+.infoTitle{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+	border: 2.4px solid black;
+	background-color:white;
+	Width: 95%;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+.info{
+	display:block;
+	overflow:scroll;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 5px;
+	border: 2.4px solid black;
+	background-color:white;
+	Width: 95%;
+	height:90%;
+	font-size:1.2em;
+}
+
+p{
+	padding:02%;
+}
+
+#footer{
+	position:absolute;
+	bottom:0;
+	right:36%;
+	background-color:white;
+	border: 2.5px solid black;
+	
+}
+
+.link{
+	color:black;
+	font-family:Avenir Book;	
+	float:left;
+	margin-left:2px;
+	margin-right:2px;
+;}
+.inbetween{
+	color:black;
+	float:left;
+	margin-left:2px;
+	margin-right:2px;
+}
+  </script>
+
+	<div id="mainContent">
+
+		<!-- Main Content -->
+
+		<h1>Construction Management Professionals</h1>
+		<h2>Services</h2>
+
+		<p><strong>Specialized Construction needs require a specialized contractor.</strong>
+		<br/>Peluso Construction, Inc. specializes in medical sensitive areas, manufacturing clean rooms and data processing centers. We have experience in the following areas:</p>
+							<table border="1">
+         						<thead>
+            							<tr>
+             						 		<th>General Services</th>
+              						 		<th>Specialized Areas</th>
+           								</tr>
+          						</thead>
+          						<tbody>
+            							<tr>
+              						 		<td>General Contracting</td>
+              						 		<td>Project Management</td>
+             						 		<td>Design and Construction</td>
+             						 		<td>Additions/Renovations</td>
+             							</tr>
+            							<tr>
+              						 		<td>Biotechnology Manufacturing
+              						 		<br/>Clean Rooms</td>
+              						 		<td>CT and PET Scan Facilities</td>
+              						 		<td>Data Processing and Storage Facilities</td>
+              						 		<td>Linear Accelerators
+              						 		<br/>MRI Trailers & Magnets
+											<br/>Radiology Suites</td>
+            							</tr>
+        						</tbody>
+							</table>
+
+		<h2>Clients</h2>
+							<p>Peluso Construction has worked with clients across Massachusetts since 1985. Below are some of our current clients:</p>
+								<ul>
+									<li><em>Beth Israel Deaconess Medical Center</em><br/>Located in Needham, MA, BIDMC is a teaching hospital of Harvard Medical School.
+										<br/><img src="images/BethIsraelDeaconessMedicalCenter.jpg" alt="Beth Israel Deaconess Medical Center" width="304" height="228"/></li>
+									<li><em>Harvard Vanguard Medical Associates</em><br/>Harvard Vanguard Medical Associates is a non-profit, multi-specialty medical group practice providing care to almost 495,000 adult and pediatric patients at more than 20 offices across eastern Massachusetts.
+										<br/><img src="images/HarvardVanguardFaulknerHospital.jpg" alt="Harvard Vanguard Faulkner Hospital" width="304" height="228"/></li>
+									<li><em>Lahey Clinic</em><br/>Lahey Clinic Medical Center in Burlington encompasses an ambulatory care center serving more than 3,000 patients each day and a 317-bed hospital.
+										<br/><img src="images/LaheyClinic.jpg" alt="Lahey Clinic" width="304" height="228"/></li>
+									<li><em>Lawrence General Hospital</em><br/>
+										Peluso Construction helped build a $5 million Imaging Center, including the only "Ambient Experience" MRI system in the state.
+										<br/><img src="images/LawrenceGeneralHospitalMRI.jpg" alt="Lawrence General Hospital MRI" width="304" height="228"/></li>
+								</ul>
+
+							<p> We have also worked with:</p>
+								<ul>
+									<li>Aimnet Solutions Inc.</li>
+									<li>Edward Kazarian, MD</li>
+									<li>The First Years Corporate Offices</li>
+									<li>Hyaluron Contract Manufacturing</li>
+									<li>Oakdale Rehab & Skilled Nursing Center</li>
+									<li>UMass Memorial Healthcare</li>
+									<li>U. S. Department of Veteran's Affairs</li>
+								</ul>
+							<p></p>
+
+	</div> <!-- END #mainContent -->
+{% endblock content %}

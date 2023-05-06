@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Déconnexion</h1>
+
+{% if form.errors %}
+   <p> vous avez deconnecté avec succès. vous pouvez <a href="{% url 'login'%}">se connecter </a>à nouveau</p>
+{% endif %}
+{% endblock %}

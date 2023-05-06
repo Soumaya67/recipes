@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style type="text/css">
+      body{
+        background: #54534E;
+        padding-top: 20px;
+        font-family: monospace;
+      }
+      .header{
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px 0px;
+        background: #FFC300 ;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .faq-item{
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+      .faq-body{
+        display: none;
+        margin-top: 30px;
+      }
+      .faq-wrapper{
+        width: 75%;
+        margin: 0 auto;
+      }
+      .faq-inner{
+        padding: 30px;
+        background: aliceblue;
+      }
+      .faq-plus{
+        float: right;
+        font-size: 1.4em;
+        line-height: 1em;
+        cursor: pointer;
+      }
+      hr{
+        background-color: #21211C;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="header">
+            <h1>FAQs</h1>
+          </div>
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h3>
+                What types of recipes are available on this website?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                This website offers a variety of recipes including appetizers, main courses, desserts, drinks, and more.           </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                 Are the recipes on this website easy to make?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                The difficulty level of each recipe varies, but we strive to include recipes that are accessible to cooks of all skill levels. We also provide detailed instructions and helpful tips to make the cooking process as easy as possible.
+              </div>
+            </div>
+
+            <hr>
+            <div class="faq-item">
+              <h3>
+                 Can I print out the recipes?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                  Yes, there is a print button available on each recipe page that allows you to print out the recipe for your convenience.
+
+                </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                Can I save recipes to my account?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                  Yes, you can create an account on our website and save your favorite recipes to your personal recipe box for easy access later on.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(".faq-plus").on('click',function(){
+        $(this).parent().parent().find('.faq-body').slideToggle();
+      });
+    </script>
+{% endblock content %}

@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block content %}
+   <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+{% load static %}
+body{
+    background-image: url('{% static 'food.jpg' %}');
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    color: orangered;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.5s;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 5%;
+
+}
+
+.content h3{
+text-align:center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 50%;
+}
+
+.content h1{
+    text-align:center;
+    font-size: 50px;
+}
+
+.content p{
+    text-align: center;
+    margin-top: 17px;
+
+    margin-right:40px;
+}
+
+.search{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 49%;
+
+}
+
+.submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 50px;
+    background-color: orangered;
+}
+   </style>
+<section>
+<div class="content" >
+
+        <h1>Happy cooking !!</h1>
+        <center><p>Welcome to our website of recipes! We are your go-to destination for delicious and easy-to-follow recipes that will impress even the pickiest eaters. Our website features a wide range of recipes from all over the world, catering to different dietary needs and preferences.
+
+Whether you are a seasoned home cook or just starting out, our step-by-step recipes and helpful tips and tricks will make cooking a breeze. We pride ourselves on using fresh, seasonal ingredients and simple cooking techniques to create tasty and nutritious meals that the whole family will love.
+
+            Our website is constantly updated with new recipes, so be sure to check back often for inspiration and ideas for your next meal. We hope you enjoy browsing our website and trying out our recipes. Happy cooking!</p></center>
+    </div>
+
+
+    <div class="submit">
+        <a href="http://127.0.0.1:8000/login">Add recipes</a>
+    </div>
+   </section>
+{% endblock content %}
